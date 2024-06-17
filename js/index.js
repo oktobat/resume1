@@ -140,7 +140,7 @@ function count(jumsu, cname, time) {
     }, time)
 }
 
-
+// 첫번째 섹션의 슬릭슬라이더
 $('.slideInner').slick({
     autoplay:true,
     arrows:false,
@@ -150,7 +150,6 @@ $('.slideInner').slick({
 })
 
 $('.slideOuter .plpa').on('click', function(){
-    
     if ( $(this).find('i').hasClass('fa-pause') ) {
         $('.slideInner').slick('slickPause')
         $(this).find('i').removeClass('fa-pause').addClass('fa-play')
@@ -158,11 +157,6 @@ $('.slideOuter .plpa').on('click', function(){
         $('.slideInner').slick('slickPlay')
         $(this).find('i').removeClass('fa-play').addClass('fa-pause')
     }
-
 })
 
 
-
-$(".open").on('click', function(){
-    $(this).toggleClass('on')
-})

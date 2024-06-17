@@ -174,13 +174,16 @@ section {
 
 
 /* 4번째 구역 */
-#sect4 { padding:200px 200px 100px 300px;
-    background-image:linear-gradient(-125deg, pink, hotpink)
+#sect4 { 
+    background-image:linear-gradient(-125deg, pink, hotpink);
+    display:flex; justify-content:center; align-items:center;
 }
 #sect4 .formbox {
     opacity:0;
     transform:translate3d(0, 100%, 0);
-    transition:all 0.5s
+    transition:all 0.5s;
+    border:1px solid #fff;
+    width:900px;
 }
 #sect4.on .formbox {
     opacity:1;
